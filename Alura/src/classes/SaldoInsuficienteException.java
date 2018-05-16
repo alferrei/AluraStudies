@@ -1,3 +1,4 @@
+package classes;
 public class SaldoInsuficienteException extends RuntimeException{
 	private final double saldoAtual;
 

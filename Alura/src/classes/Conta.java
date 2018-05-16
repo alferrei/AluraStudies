@@ -1,14 +1,17 @@
+package classes;
 
 public class Conta {
 	private double saldo;
 	private String titular;
 	private int agencia;
 	private int numero;
-
-	void deposita(double valor) {
-		this.saldo += valor;
-
-	}
+	public void deposita(double valor) throws ValorInvalidoException {
+        if (valor < 0) {
+            throw new ValorInvalidoException(valor);
+        } else {
+            this.saldo += valor  - 0.10;        
+        }        
+    }
 
 	public void saca(double valor) {
 		if (saldo >= valor) {

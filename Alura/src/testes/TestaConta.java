@@ -1,6 +1,11 @@
+package testes;
+import classes.Conta;
+import classes.SaldoInsuficienteException;
+import classes.ValorInvalidoException;
+
 public class TestaConta {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws ValorInvalidoException {
 
       Conta joao = new Conta();
       joao.deposita(50.0);

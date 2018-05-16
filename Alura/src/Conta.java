@@ -14,9 +14,9 @@ public class Conta {
 		if (saldo >= valor) {
 			this.saldo -= valor;
 		} else {
-			throw new RuntimeException("Saldo insuficiente");
-		}
+			throw new SaldoInsuficienteException(saldo);
 
+		}
 	}
 
 	public double getSaldo() {

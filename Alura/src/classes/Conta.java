@@ -14,7 +14,7 @@ public class Conta {
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = 100;
-		System.out.println("Estou criando uma conta" + this.numero);
+		System.out.println("Estou criando a conta" + this.numero);
 	}
 
 	public void deposita(double valor) {

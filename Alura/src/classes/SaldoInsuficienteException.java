@@ -1,5 +1,9 @@
 package classes;
 public class SaldoInsuficienteException extends RuntimeException{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1682503634080889727L;
 	private final double saldoAtual;
 
     public SaldoInsuficienteException(double saldoAtual) {

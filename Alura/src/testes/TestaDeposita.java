@@ -1,14 +1,11 @@
 package testes;
 import classes.*;
 public class TestaDeposita {
-    public static void main(String[] args) {
-        Conta cp = new Conta();
+    public static void main(String[] args) throws ValorInvalidoException {
+    	int agencia=0,numero=0;
+        Conta cp = new Conta(agencia,numero);
 
-        try {
-            cp.deposita(-100);
-        } catch (ValorInvalidoException e) {
-            System.out.println(e.getMessage());
-        }
+        cp.deposita(-100);
     }
 
 }

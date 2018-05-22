@@ -9,11 +9,11 @@ public class TestaGerente {
 		gael.setCpf("325243543-0");
 		gael.setSenha(1324);
 		boolean autenticou = gael.autentica(1324);
-		
+
 		System.out.println(gael.getNome());
 		System.out.println(gael.getCpf());
 		System.out.println(gael.getSalario());
-		
+
 		System.out.println(autenticou);
 	}
 

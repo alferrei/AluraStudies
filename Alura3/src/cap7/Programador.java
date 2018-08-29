@@ -9,14 +9,14 @@ public class Programador {
 		this.linguagem = linguagem;
 		this.salario = salario;
 	}
-	
+
 	public void mostrarDados() {
-		System.out.println("Nome: " +nome);
+		System.out.println("Nome: " + nome);
 		System.out.println("Linguagem que programa " + linguagem);
-		System.out.println("Slario: " + salario);
+		System.out.println("Salario: " + salario);
 		System.out.println("----------------------------------------------");
 	}
-	
+
 	public Programador() {
 
 	}

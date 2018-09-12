@@ -2,27 +2,27 @@ package cap11;
 
 import java.util.*;
 
-public class ListaDeFrutas {
+public class ConjuntoDeFrutas {
 
 	private static final String FRUTAS[] = { "morango", "maça", "uva", "banana", "pera", "goiaba", "amora" };
 	private static final String FRUTAS2[] = { "abacaxi", "limão", "graviola", "banana", "mamão", "goiaba" };
 
-	public static void imprimirLista(List<String> lista) {
-		for (String fruta : lista)
-			System.out.print(fruta + " ");
-		System.out.println("\nTotal de " + lista.size() + " frutas\n");
+	public static void imprimirLista(Set<String> conjunto) {
+		for (String fruta : conjunto)
+			System.out.print(conjunto + " ");
+		System.out.println("\nTotal de " + conjunto.size() + " frutas\n");
 	}
 
-	public static void convertMaiuscula(List<String> lista) {
-		for (String fruta : lista) {
-			System.out.println(fruta.toUpperCase() + " ");
+	public static void convertMaiuscula(Set<String> conjunto) {
+		for (String fruta : conjunto) {
+			System.out.print(fruta.toUpperCase() + " ");
 		}
 		System.out.println("");
 	}
 
 	public static void main(String[] args) {
-		List<String> listaFrutas = new ArrayList<>(Arrays.asList(FRUTAS));
-		List<String> listaFrutas2 = new ArrayList<>(Arrays.asList(FRUTAS2));
+		Set<String> listaFrutas = new TreeSet<>(Arrays.asList(FRUTAS));
+		Set<String> listaFrutas2 = new TreeSet<>(Arrays.asList(FRUTAS2));
 		
 		imprimirLista(listaFrutas);
 		imprimirLista(listaFrutas2);
